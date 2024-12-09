@@ -5,112 +5,235 @@ import flet as ft
 less_1 = ft.Container(
     ft.Column(controls=[
         # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('Установка Minecraft и Python',text_align='center'),width=700),
-        ft.Container(ft.Text('1. Качаем и устанавливаем Tlauncher.org (если еще не установлен)'),width=700),
-        ft.Container(ft.Text('2. Качаем и устанавливаем python с python.org (если еще не установлен)'),width=700),
-        ft.Container(ft.Text('3. Качаем и устанавливаем Java.com (если еще не установлен)'),width=700),
-        ft.Container(ft.Text('4. Переходим в mif.to/minecraft, листаем вниз до надписи “Дополнительные материалы”, нажи- маем на “установочные файлы для Windows” и качаем. Скаченный архив распакуйте в папку со своим именем и фамилией на рабочем  столе.'),width=700),
-        ft.Container(ft.Text('5. Нажимаем на файл в папке с распакованными файлами Install_API и ждём окончания установки'),width=700),
-        ft.Container(ft.Text('6. Переходим в папку server, открываем файл  server, меняем строку online.mode = true на online.mode = false, сохраняем и закрываем'),width=700),
-        ft.Container(ft.Text('7. В папке Minecraft Tools запускаем сервер - Start_Server. Не закрываем терминал! Сервер  запущен только в открытом состоянии'),width=700),
-        ft.Container(ft.Text('8. В Tlauncher выбираем версию 1.11.2, вводим имя на анлийском, нажимаем установить'),width=700),
-        ft.Container(ft.Text('После запуска игры выбираем - Сетевая игра, добавить. Имя сервера - своя фамилия, адрес сервера - localhost и подключаемся. Сервер запущен!'),width=700),
-    ])
+        ft.Container(ft.Text('Начало',text_align='center'),width=700),
+        ft.Container(ft.Text('Ты прошел уроки по роблоксу и вот новый уровень - разработка игр в Майнкрафте на питоне. Поздравляем! Стоит понимать, что прежде всего, мы будем изучать питон. Майнкрафт - это среда, где код будет исполняться и мы сможем делать разные крутые штуки. Как и всегда, начнем с чего-то простого, и в конце научимся делать дейтсвительно сложные вещи в майнкрафте. Можно будет даже поднять свой сервер с модами и играть на нём вместе с друзьями.'),width=700),
+        ft.Container(ft.Text('Начнём. Нам нужно связать питон и майнкрафт. Сделаем это через запуск сервера Spigot. На рабочем столе найди папку - Minecraft Tools, зайди в нее. Запусти файл - Start_Server. На экране появится консоль с букафками.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Сервер заупстится через 15 секунд. Вначале процесса запуска увидите строку с версией майнкрафта, которую запускает сервер.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/2.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Именно эту версию и нужно будет выбрать (или установить) в тлаунчере. Не закрываем окно с консолью! Оно в фоновом режиме держит сервер на компьютере. Заходите в тлаунчер, выбираете нужную версию и запускаете игру'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/3.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('После запуска игры заходим в сетевую игру и нажимаем "Добавить". Название сервера пишем любое, например - Питон. Адрес сервера - localhost, и нажимаем готово. В списке серверов снизу появится наш сервер. По умолчанию он бдует активен с игроками - 0/20. Заходим на сервер.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/4.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/5.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Отлично, сервер накатили, майнкрафт к нему подключили. Теперь нужно подключить среду разработки, где и будем писать код. Для начала создайте папку на рабочем столе со своей фамилией и именем. Кликните по ней правой кнопкой мыши и выбирете - открыть с помощью Code.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/6.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Откроется окно VS Code. Vs Code - это место, где можно удобно писать код.'),width=700),
+        ft.Container(ft.Text('Все файлы нужно хранить удобным образом, не перемешивать код из разных уроков. Поэтому сразу делаем красиво - слева, под проводником, в пустом месте кликнете правой кнопкой мыши и выбирете - создать папку'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/7.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Папку назовите - lesson_1. Здесь будут храниться файлы первого урока. '),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/8.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Теперь кликни по созданной папке правой кнопкой мыши и выбери - создать файл. '),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/9.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Введи название - 1.py и нажми enter. И это не РУ на русском, это пай - py на аглийском. Сокращение от python.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/10.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Отлично! Здесь мы и будем пистаь код. Напишем простую программу телепортации. Зайдите обратно в майнкрафт и нажмите F3, чтобы узнать координаты. '),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/11.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Запомните эти координаты или запишите. Далее отбегите подальше. '),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/12.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Перепишите себе код. Слово в слово. Буква в букву. По опыту роблокса вы уже понимаете, что если ошибёшься и поставишь в одном слове вместо большой буквы - маленькую, то вся программа не будет работать. Поэтому всегда будьте внимательны.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/13.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Запустите программу. Для этого нажмите на треуголькиик справа сверху.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/14.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Снизу вскода откроется консоль. Если ошибок в коде нет, то обновится строка с расположением файла и все.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/15.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Зайдите в майнкрафт. Персонаа должно было тепнуть в заданные координаты.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/16.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Специально допущу ошибку, уберу скобки во второй строке у create и запущу программу. Поулчаю ругательства в косноли.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/17.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Разбираться в этих ругательствах - отдельное искусство, которому нужно будет учиться. Иногда там написаны понятные вещи, которые позволяют быстро найти ошибку. В другой раз - это просто ругательства. Будем разбираться в процессе.'),width=700),
+        ft.Container(ft.Text('У тебя получилось? Поздравляю! Ты поднял сервер, связал его с майнкрафтом, подключил среду разработки и написал первую программу - телепортацию персонажа. Разбираться в коде мы сейчас не будем, цель была не в этом. Разберемся в следующих уроках.'),width=700),
+        ft.Container(ft.Text('Скажи преподавателю - я молодец, сделал первый урок. Он разрешит перейти к следующему.'),width=700),
+        ft.Container(ft.Text(''),width=700),
+        
+        ])
 )
+
 # 2 урок
 less_2 = ft.Container(
     ft.Column(controls=[
-        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('Перемещение персонажа',text_align='center'),width=700),
-        ft.Container(ft.Text('1. Не закрывайте терминал с запущенным  сервером и клиент minecraft, в пуске, либо  поиске введите IDLE и запустите. IDLE - среда для выполнения кода Python.'),width=700),
-        ft.Container(ft.Text('2. В запущенной программе введите строку:'),width=700),
-        ft.Container(ft.Text('from mcpi.minecraft import Minecraft',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('и нажмите enter'),width=700),
-        ft.Container(ft.Text('3. Введите строку и нажмите enter:'),width=700),
-        ft.Container(ft.Text('mc = Minecraft.create()',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('4. Введите строку и нажмите enter:'),width=700),
-        ft.Container(ft.Text('mc.player.setPos(100,100,100)',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('5. Если все команды ввелись без ошибок, прог-  рамма не выругалась красным цветом, то   перейдите в клиент Minecraft. Игрок должен   телепортироваться.  Если программа ругается красным, вы либо (вероятно) допустили ошибку при переписы- вании программы - в таком случае введите  строку кода заново, без ошибки, либо у вас  криво встали библиотеки майнкрафта в питон,  их нужно переустановить. Как это сделать  спросите у преподавателя.'),width=700),
-        ft.Container(ft.Text('6. Когда все зарботало, зовите препода, он расскажет, что за код написали.'),width=700),
+        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Тепаем хомяка.',text_align='center'),width=700),
+        ft.Container(ft.Text('В уроке будем разбираться с телепортацией и начнем знакомиться с языком программирования Питон.'),width=700),
+        ft.Container(ft.Text('Самое простое, что можем быть в любом языке программирования - это переменные.'),width=700),
+        ft.Container(ft.Text('Переменные нужны для хранения данных, которые позже будут использованы в программе. Данные — это любая полезная информация: числа, имена, текст, списки значений и т. д. К примеру, в переменной pickaxes может храниться число 12. Создайте папку - lesson_2, в ней файл - 2.py . В файле напишите код.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Это всё, что нужно, чтобы создать переменную и дать ей како-то значение'),width=700),
+        ft.Container(ft.Text('Чтобы создать переменную в Python, нужно ввести в окне консоли имя переменной, поставить знак «равно» (=), а после добавить значение этой переменной. Допустим, вы решили отправить игрока в путешествие по биомам. В этом случае ему понадобятся солидные запасы провизии. Назовем переменную bread и зададим ей значение 145:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/2.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Имя переменной всегда пишется слева от  знака «равно», а  значение, которое в  ней хранится,  — справа. Эта строка кода означает, что мы объявили переменную bread и присвоили ей значение 145.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/3.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Объявив переменную и присвоив ей значение, вы можете проверить, что в  ней хранится. Для печати чего-либо в консоли, используем print(). Перепишите следующий код и запустите.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/4.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('В консоли распечатается значение перменной bread'),width=700),
+        ft.Container(ft.Text('Вы можете называть переменные как угодно, однако желательно, чтобы имя соответствовало назначению переменной. Так будет проще понять, что происходит в вашей программе. Имена переменных пишутся со  строчной буквы. Это не  правило языка, а  соглашение, принятое Python-программистами. Ему нужно следовать, чтобы другим программистам было удобно читать ваш код.'),width=700),
+        ft.Container(ft.Text('Как устроены языки программирования',text_align='center'),width=700),
+        ft.Container(ft.Text('У каждого языка программирования есть набор правил — синтаксис. Эти правила похожи на правила русского языка, которыми мы пользуемся, чтобы составлять предложения. Если вы будете знать синтаксис языка Python, ваши программы будут работать, а если нарушите их, компьютер просто не поймет, что вы от него хотите.'),width=700),
+        ft.Container(ft.Text('Каждая инструкция в  вашем коде похожа на  предложение. Только в  русском языке конец предложения обозначается точкой, а в Python — переходом на новую строку. Строка с инструкцией называется командой.'),width=700),
+        ft.Container(ft.Text('Предположим, вы решили вести учет кирок (pickaxes), блоков железной руды (iron ore) и булыжников (cobblestone). Для этого можно ввести следующее:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/5.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Название блоков железной руды для простоты я сократил до одного слова. Обратите внимание, что каждый тип предметов записан отдельной строкой. Благодаря этому Python понимает, что вы хотите отслеживать количество трех разных предметов. Если вы запишете все команды в одну строку, Python запутается и сообщит о синтаксической ошибке:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/6.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Синтаксическая ошибка (SyntaxError) означает, что Python не понимает ваших команд и не может их выполнить. В данном случае программе неясно, где начинается и где заканчивается каждая команда. Такая ошибка называется «неверный синтаксис» (invalid syntax).'),width=700),
+        ft.Container(ft.Text('Также Python не поймет, что нужно делать, если в начале строки будет стоять пробел'),width=700),
+        ft.Container(ft.Text('Синтаксис для переменных',text_align='center'),width=700),
+        ft.Container(ft.Text('Имена, которые вы будете давать переменным, тоже должны подчиняться синтаксису языка Python. Имейте в виду:'),width=700),
+        ft.Container(ft.Text('В имени не должно быть других символов, кроме латинских букв, цифр и нижнего подчеркивания (_).'),width=700),
+        ft.Container(ft.Text('Не начинайте имя с цифры. 9bread не подойдет. Однако в любом другом месте цифра стоять может — например, здесь: bread9.'),width=700),
+        ft.Container(ft.Text('До и  после знака «равно» лучше ставить пробел. Это не  обязательно, но  так принято делать в  среде программистов, чтобы легче читать код.'),width=700),
+        ft.Container(ft.Text('Телепортация игрока',text_align='center'),width=700),
+        ft.Container(ft.Text('Вы научитесь использовать переменные и работать с целыми числами, создав программу телепортации игрока.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/7.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('На рисунке видно, что позиция игрока в мире Minecraft определяется тремя координатами: x («икс»), y («игрек») и z («зэт»). Координата y соответствует высоте, x и z — положению на горизонтальной плоскости.'),width=700),
+        ft.Container(ft.Text('Начнем писать код телепортации и разберемся в нем '),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/8.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Эти команды нужны для подключения к игре Minecraft, и они должны быть в каждой Python-программе, которая с ней взаимодействует. '),width=700),
+        ft.Container(ft.Text('mc = Minecraft.create() - создает соединение с майнкрафтом. При этом адрес и порт будут по умолчанию, а это локалхост, который вы вводите при подключению к серверу. Он же - 127.0.0.1.'),width=700),
+        ft.Container(ft.Text('from mcpi.minecraft import Minecraft - подключаем библиотеку для работы с майнкрафтом через питон. Она под капотом и позволяет нам пистаь код, который отрабатывает сервер.'),width=700),
+        ft.Container(ft.Text('Затем объявим три целочисленные переменные с именами x, y и z.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/9.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Эти переменные соответствуют координатам, в которые вы собираетесь телепортировать игрока. Пока присвоим им значения 10, 110 и 12. Далее введите следующую строку кода — она и будет телепортировать игрока:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/10.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Выражение setTilePos() — это функция, то  есть фрагмент ранее созданного программистами кода. Функция setTilePos(x, y, z) дает игре команду изменить координаты игрока на  значения, указанные в скобках'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/11.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Запустите код и перейдите в майнкрафт. Убедитесь, что игрока тепнуло.'),width=700),
+        ft.Container(ft.Text('Замедление телепортации',text_align='center'),width=700),
+        ft.Container(ft.Text('Python выполняет команды кода почти мгновенно. Однако вы можете замедлить процесс, научив вашу программу делать паузу в несколько секунд. Воспользуйтесь модулем time, который содержит готовые функции для работы со временем. Для этого добавьте в самый верх программы следующую строку:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/12.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Важно помнить, что модуль time должен быть импортирован (с помощью команды import) раньше всех его функций. Например, функции sleep(), которая позволяет приостановить выполнение программы на указанное число секунд. В противном случае Python не сможет найти функцию sleep() и, не зная, что делать дальше, остановит вашу программу. Именно поэтому команды импорта всех необходимых вам модулей лучше помещать в начале кода.'),width=700),
+        ft.Container(ft.Text('Сделаем задержку в телепортации. Добавтье строку в код'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/13.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Она позволит сделать задержку перед телепортацией. Запустите, зайдите в программу и посмотрите результат.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_2/14.gif',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Отлично. Теперь сделай задание - тебя должно тепать каждые 3 секунды в разные координаты 5 раз подряд. Сделай это и покажи преподу. Он оценит и разрешит перейти к следующему заданию.'),width=700),
         ft.Container(ft.Text(''),width=700),
-        ft.Container(ft.Text(''),width=700),
-    ])
+        
+        
+        ])
 )
 # 3 урок
 less_3 = ft.Container(
     ft.Column(controls=[
-        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('Телепортация по кругу',text_align='center'),width=700),
-        ft.Container(ft.Text('1.Писать код и вводить построчно неудобно. Нажми file - new file в IDLE. Появится окно, в котором можно писать многострочный код. Чтобы запустить такой код, нажмите run.'),width=700),
-        ft.Container(ft.Text('2. Чтобы телепортация не происходила мгновенно, мы добавим задуржку. Введите:'),width=700),
-        ft.Container(ft.Text('\nimport time - добавляем библиотеку для управления временем\ntime.sleep(5) - программа спит 5 секунд',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('2. Добавим код с прошлого урока, вся программа будет выглядеть так:'),width=700),
-        ft.Container(ft.Text('\nimport time\nfrom mcpi.minecraft import Minecraft\nmc = Minecraft.create()\ntime.sleep(5)\nmc.player.setPos(100,100,100)',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('перепишите программу и запустите. Теперь игрок телепортируется не сразу, а через 5 се-кунд после запуска программы.'),width=700),
-        ft.Container(ft.Text('3. Напишите программу, где игрока телепортируест каждые 5 секунд. Сделайте не менее 4-х телепортация в разные точки карты. Когда напишите программу, покажите преподавателю'),width=700),
+        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_1/',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Супер стройка',text_align='center'),width=700),
+        ft.Container(ft.Text('Для начала разберемся с выражениями'),width=700),
+        ft.Container(ft.Text('Объединив числа, переменные и математические операции, вы можете создать небольшой фрагмент кода — выражение. Например, такое: 2 + 2. Из выражений можно составлять команды'),width=700),
+        ft.Container(ft.Text('Команда — это фрагмент кода, занимающий одну или несколько строк и выполняющий в программе определенные действия. Так, выражение 2 + 2 может быть частью команды zombies = 2 + 2.'),width=700),
+        ft.Container(ft.Text('Напишите выражение и посмотрите, что получится. Не забудьте создать папку lesson_3 и в ней 3.py. Напоминать вам об этом дальше не буду. Переходя на новый урок каждый раз создавайте под него папку и питон файл в ней.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Запустив эту программу, вы увидите число 4.'),width=700),
+        ft.Container(ft.Text('Операции',text_align='center'),width=700),
+        ft.Container(ft.Text('В математике операциями называются производимые над числами действия. В программировании математические операции позволяют изменять и объединять числа нужным образом.'),width=700),
+        ft.Container(ft.Text('В Python есть все основные математические операции: сложение, вычитание, умножение и деление, — а также более сложные, такие как возведение в степень. Начнем со сложения.'),width=700),
+        ft.Container(ft.Text('Построим что-нибудь',text_align='center'),width=700),
+        ft.Container(ft.Text('С помощью функции setBlock() в мире Minecraft можно создать блок и поместить его в заданное место. Аналогично setPos() и setTilePos() функция setBlock() принимает значения трех аргументов — координат x, y и z. Но есть у нее и четвертый аргумент: тип блока. Он определяет, какой именно блок нужно добавить в игру.'),width=700),
+        ft.Container(ft.Text('Каждому типу блоков, будь то трава, лава или арбуз, соответствует определенное целое число. Для стоячей лавы это 11, для воздуха — 0, для воды — 8, а для арбуза — 103.'),width=700),
+        ft.Container(ft.Text('Ниже представлены коды всех блоков'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/2.jpg',width=500),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/3.jpg',width=500),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/4.jpg',width=500),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/5.jpg',width=500),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/6.jpg',width=500),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/7.jpg',width=500),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Зайдите в майнкрафт, посмотрите координаты игрока. Напишите следующий код, вставив координату блока перед игроком. (координаты в примере будут отличаться от ваших! Вычислите их самостоятельно)'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/9.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Запустите и зайдите в майнкрафт. перед вами должен появиться арбуз.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_3/8.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Задание - сделайте портал в ад из обсидиана с помощью кода. Покажите преподу, когда будет готово.'),width=700),
         ft.Container(ft.Text(''),width=700),
-    ])
+        ])
 )
 # 4 урок
 less_4 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('Постройка дома',text_align='center'),width=700),
-        ft.Container(ft.Text('1. Блоки строятся с помощью двух команд:'),width=700),
-        ft.Container(ft.Text('mc.setBlock(6,5,2,103) - установка одного блока',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('где 6,5,2 - координаты установки блока, 103 - тип блока Типов блоков очень много, все не запомнить, можете скачать таблицу с номерами блоков из интернета и закинуть себе в папку.'),width=700),
-        ft.Container(ft.Text('mc.setBlocks(1,1,1,10,10,10,103) - установка множества блоков',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('В данном случае блоки ставятся внутрь параллелепипеда, 1,1,1 - координаты одного угла, 10,10,10 - координаты противоположного угла, 103 - тип блока'),width=700),
-        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/1.png',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('Постройте дом с помощью кода. У дома должна дверь, окно, крыша. Как сделаете, покажите преподу.'),width=700),
+        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Строим и балуемся',text_align='center'),width=700),
+        ft.Container(ft.Text('Вначале узнаем текущую позицию игрока. Для этого вызовите функцию getTilePos()'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Зная координаты под ногами, можно пошалить.'),width=700),
+        ft.Container(ft.Text('Добавьте блок лавы под ноги персонажу. Покажи преподу результат.'),width=700),
+        ft.Container(ft.Text('Теперь сделаем что-то дейтсивтельно прикольное. Из роблокса ты уже знаешь, как делать бесконечные циклы. Здесь они делаются похожим образом.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/2.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('while True - создает бескоечный цикл. Не забудьте поставить задержку внутри цикла в секунду или рядом. Если попробовать вывыести принт в бесконечном икле без задержки, то процессор встанет секунд через 5. А может и нет. От компьюера зависит.'),width=700),
+        ft.Container(ft.Text('Так вот получай позицию игрока в бесконечном цикле, и через каждые 0.2 секунды создавай под ним блок чего-нибудь. Получится интересный эффект - персонаж идет, и по его маршруту тянется созданный блок. Сделай задание и покажи преподу.'),width=700),
+        ft.Container(ft.Text('Сделали задание? Отлично! Теперь научимся строить быстро, качественно, недорого.'),width=700),
+        ft.Container(ft.Text('Для установки единичного блока мы использовали функцию setBlock(), однако есть еще одна функция — setBlocks(). Она позволяет создать прямоугольный параллелепипед, который еще называют кубоидом, состоящий сразу из нескольких блоков. При этом длина, ширина и высота кубоида могут быть разными.'),width=700),
+        ft.Container(ft.Text('Функция setBlocks() позволяет заполнять блоками большие объемы пространства. Вызвав эту функцию, передайте ей два набора координат и тип блока. Первый набор координат должен соответствовать положению одного угла кубоида, а  второй  — положению противоположного ему угла'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/3.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Давайте что-нибудь построим. Перепишите код и запустите.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/4.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/5.gif',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Отлично! Сделали кучу камня. Как сделать внутри постоту? Да просто добавить там материал-воздух. '),width=700),
+        ft.Container(ft.Text('Задание - сделать будку для собаки 50х6х50 блоков из любого материала. Постройте дом с помощью кода. Функция setBlocks() вам в помощь.'),width=700),
         ft.Container(ft.Text(''),width=700),
-    ])
+        
+        ])
 )
 # 5 урок
 less_5 = ft.Container(
     ft.Column(controls=[
-        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('Случайные числа и вывод в чат',text_align='center'),width=700),
-        ft.Container(ft.Text('1. Часто в играх нужно получить случайные  значения. Научимся телепортировать перса в случайные координаты:'),width=700),
-        ft.Container(ft.Text('\nimport random - добавляем библиотеку для рандомных чисел\ncount = random.randint(1,6) - в переменную\ncount кладем рандомное число от 1 до 6',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('2. Сделайте программу, в которой игрока телепортирует каждые 2 секунды в случайную  точку в кубе 20-20-20 блоков. Чтобы зациклить программу, можно использовать бесконечный цикл while true: , программа будет выглядеть как-то так:'),width=700),
-        ft.Container(ft.Text('import time\nimport random\nfrom mcpi.minecraft import Minecraft\nmc = Minecraft.create()\nwhile True:\n   код телепортации',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('3. Научимся писать сообщения в чат:'),width=700),
-        ft.Container(ft.Text('mc.postToChat(“Hello!”)',color='#FBD46D'),width=700),
-        ft.Container(ft.Text('Доработай прогу из второго пунтка, чтобы координаты, куда тэпнулся перс выводились в чат. Сделай и покажи преподу.'),width=700),
-    ])
+        ft.Container(ft.Text('Переписка',text_align='center'),width=700),
+        ft.Container(ft.Text('В этом уроке вам предстоит познакомиться с еще одним типом данных — строками. В строках обычно содержатся буквы и знаки, но  могут быть и  числа. Строки  — важная часть Python-программ. С их помощью вы можете вывести на экран сообщение, чтобы донести до пользователя нужную информацию.'),width=700),
+        ft.Container(ft.Text('Строковый тип данных позволяет работать с  текстовой информацией разного вида: от буквы и знака, таких как «a» или «:», до целых абзацев. Каждая буква, цифра и знак в составе строки называется символом. Если вы хотите использовать в коде буквы, слова или предложения, строки — это именно то, что вам нужно. Содержимое строки заключается в кавычки-лапки. Вот так:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('А вот еще одна строка:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/2.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Заметили, чем отличается один пример от  другого? Первая фраза заключена в двойные кавычки , а вторая — в одинарные. В строках можно использовать оба вида кавычек. Однако смешивать их нельзя! Если строка начинается с одиночной кавычки, то и заканчиваться она должна одиночной кавычкой. И наоборот: если строка начинается с двойной кавычки, в конце тоже должна стоять двойная. Оба вида кавычек поддерживаются в Python неспроста. Если в тексте нужно выделить прямую речь, вы без проблем сможете использовать двойные кавычки, заключив строку в одинарные.'),width=700),
+        ft.Container(ft.Text('Привет, мир Minecraft!',text_align='center'),width=700),
+        ft.Container(ft.Text('Чтобы общаться с другими пользователями, вы можете отправлять сообщения в чат с помощью функции postToChat(). Эта функция принимает строковый аргумент, отображая его содержимое в окне игрового чата'),width=700),
+        ft.Container(ft.Text('Напишите и запустите следующий код'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/3.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Получим такую красоту'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/4.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Проблема с кодировкой. Чем больше будете программировать, тем чаще будете с ней сталкиваться. Русский язык далего не везде сходу нормально отображается. Сейчас пока просто опустим эту проблему и попечатаем на английском.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/5.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Напоминаю, что аргумент  — это данные, которые вы передаете в функцию при ее вызове и  которые нужны ей для работы. В  предыдущей главе мы передавали в  функции числовые значения, однако postToChat() требуется аргумент-строка.'),width=700),
+        ft.Container(ft.Text('Функция postToChat() похожа на print(). Обе выводят строки на экран, и обе могут принимать в качестве аргумента переменную, в которой хранится строка. Отличие их в том, что print() выводит строку в окне консоли Python, а postToChat() — в чате Minecraft.'),width=700),
+        ft.Container(ft.Text('Задание - вернитесь к программе в уроке, где телепортировали перса по 5 координатам. После каждой телепортации, выведите координаты в чат. ПОкажи преподу работу программы, когда сделаешь.'),width=700),
+        ft.Container(ft.Text('Отлично! Писать в чат мы научились. Теперь научимся получать сообщения из чата, которые вводит пользователь. Перепишите и запустите код'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/6.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Теперь зайдите в майнкрафт. Лучше сделать отображение в окне, чтобы было видно вскод и майнкрафт одновременно. Отправьте сообщение в чат. Оно же должно отобразиться и в консоли в вскоде.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/7.gif',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Мы получили чат из майнкрафта в коде. Отлично! Теперь мы можем что-то делать в ответ на команды.'),width=700),
+        ft.Container(ft.Text('Сделаем следующее - если в чат написать lol, то тебе в ответ напишут - сам лол. Перепиши код и запусти'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/9.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/8.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Получилось? Хорошо! Задание - сделай тай, чтобы если в чат написать "Алмаз", то перед тобой возникал блок аламазов. Сделай и покажи преподу.'),width=700),
+        ft.Container(ft.Text(''),width=700),
+
+        
+        
+        ])
 )
 # 6 урок
 less_6 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('Умное перемещение',text_align='center'),width=700),
-        ft.Container(ft.Text('1. Первым делом нужно узнать текущее положение игрока. Сделаем это с помощью  getTilePos()'),width=700),
-        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/2.png',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('2. Зная текущее положение, теперь мы можем переместить игрока.'),width=700),
-        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/3.png',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('Ранее мы перемещали игрока с помощью  координат setPos. Но это не всегда удобно, ведь привязка идёт к координатам Майнкрафта Теперь же вы можете перемещать игрока относительно его начального положения, следить за координатами Майнкрафт больше не нужно.'),width=700),
-        ft.Container(ft.Text('3. Напишите скрипт, который перемещает игрока вперед на 5 блоков и назад каждые 2 секунды'),width=700),
+        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('',text_align='center'),width=700),
         ft.Container(ft.Text(''),width=700),
-    ])
+        
+        
+        ])
 )
 # 7 урок
 less_7 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('Умное строительство',text_align='center'),width=700),
-        ft.Container(ft.Text('1. С помощью координат перса теперь мы можем строить блоки относительно него по умному.Создадим лаву под персонажем.'),width=700),
-        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/4.png',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('С помощью getTelePos и SetBlock закатайте персонажа со всех сторон в бедрок.'),width=700),
+        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_7/',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('',text_align='center'),width=700),
         ft.Container(ft.Text(''),width=700),
-    ])
+        
+        
+        ])
 )
 # 8 урок
 less_8 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('Блок под ногами игрока',text_align='center'),width=700),
-        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_4/5.png',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('с помощью getBlock мы получаем тип блока и сохраняем его в переменной blockType, но ничего с этим не делаем. Выведи значение в чат и поставь задержку в 1 секунду, чтобы чат не долбило без перерыва. Чтобы тип блока определился не 1 раз, а постоянно добавьте цикл while.'),width=700),
-        ft.Container(ft.Text('С помощью конструкции if, создайте программу которая проверяет, что под ногами блок песка, и если песок, то превратить его в булжник'),width=700),
+        # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_8/',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('',text_align='center'),width=700),
         ft.Container(ft.Text(''),width=700),
-    ])
+        
+        
+        ])
 )
 
 
