@@ -259,25 +259,87 @@ js_2 = ft.Container(
         ft.Container(ft.Text(''),width=700),
     ])
 )
-# 3 урок js
+# 3 урок js1 Список дел
 js_3 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('В РАЗРАБОТКЕ',text_align='center'),width=700,margin=ft.margin.only(top=300)),
-        ft.Container(ft.Text('У нас лапки, но мы работаем. Скоро здесь что-то появится.',text_align='center'),width=700),
+        ft.Container(ft.Text('Список дел',text_align='center'),width=700),
+        ft.Container(ft.Text('В прошлом уроке вы научились взаимодейтсововать с готовым бэкендом. Получать с него данные по запросу, обрабатывать его и выводить на страницу. Сегодня мы усложним задачу - напишем список задач. Будет 3 вкладки - все задачи, активные и выполненные. Задачи должны переходить в разные категории в зависимости от клика по чекбоксу. Так же должна быть возхможность добавить или удалить задачу.'),width=700),
+        ft.Container(ft.Text('Интерфейс должен выглядеть так:'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/1.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Чтобы реализовать этот проект, нужно использовать какое-то хранилище данных. Ведь нужно доавлять, изменять и удалять заадчи. Для этого их нужно где-то хранить. Идеальным вариантом здесь будет локал сторедж. localStorage — это хранилище браузера, благодаря которому сайты могут сохранять небольшие объёмы информации на устройстве пользователя. Данные сохраняются в том числе после завершения работы: при следующем посещении сайта они остаются доступными.'),width=700),
+        ft.Container(ft.Text('Некоторые особенности localStorage:'),width=700),
+        ft.Container(ft.Text(' - Хранит данные в виде пар «ключ-значение», где оба элемента — это строковые данные.'),width=700),
+        ft.Container(ft.Text(' - Не имеет ограничений по времени хранения. Данные могут быть очищены пользователем вручную или браузером при переполнении автоматически (браузеры на основе движка WebKit, например Safari, очищают localStorage, если к нему не обращались в течение 7 дней).'),width=700),
+        ft.Container(ft.Text(' - Максимальный объём данных ограничен размером 5MB.'),width=700),
+        ft.Container(ft.Text('Пример использования localStorage:'),width=700),
+        ft.Container(ft.Text(' - Сохранение данных в localStorage: localStorage.setItem("username", "JohnDoe")'),width=700),
+        ft.Container(ft.Text(' - Извлечение данных из localStorage: let username = localStorage.getItem("username")'),width=700),
+        ft.Container(ft.Text(' - Удаление данных из localStorage: localStorage.removeItem("username")'),width=700),
+        ft.Container(ft.Text(' - Очистка всего localStorage: localStorage.clear()'),width=700),
+        ft.Container(ft.Text('Чтобы открыть локал сторедж и увидеть, какие данные там есть, нажмите f12 (интсрументы разработчика), далее перейдите во вкладку Application и в меню слева выберите - local storag.'),width=700),
+        ft.Container(ft.Text('Попробуйте открыть какие-нибудь сайты, например - яндекс, и перейдите в локал сторедж. Вы увидите, какие данные хранит яндекс на вашем компьютере.'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/2.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/3.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Можете приступать к работе. Я понимаю, что скорее всего вы сейчас выпали в осадок и не понимаете, как это вообще делать. Понимание, как и всегда прийдет в процессе. Просто начни с дизайна. Сделай весь html и css. Далее позови препода, и задай вопросы. '),width=700),
+        ft.Container(ft.Text(''),width=700),
+        ft.Container(ft.Text(''),width=700),
+        ft.Container(ft.Text(''),width=700),
     ])
 )
-# 4 урок js
+# 4 урок js Аякс
 js_4 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('В РАЗРАБОТКЕ',text_align='center'),width=700,margin=ft.margin.only(top=300)),
-        ft.Container(ft.Text('У нас лапки, но мы работаем. Скоро здесь что-то появится.',text_align='center'),width=700),
+        ft.Container(ft.Text('Аякс запросы',text_align='center'),width=700),
+        ft.Container(ft.Text('Этот урок на данном этапе больше теоретический, чем практический. Сейчас применить аякс запросы вы не сможете, для этого нужен нормальный собстенный бэкенд, который мы будем писать на php. Просто прочитай урок, чтобы знать, что такое возможно, а вернешься сюда уже во время изучения php.'),width=700),
+        ft.Container(ft.Text('AJAX в JavaScript (от англ. Asynchronous Javascript and XML — «асинхронный JavaScript и XML») — это технология, которая позволяет веб-страницам обновлять данные без перезагрузки страницы.'),width=700),
+        ft.Container(ft.Text('Это достигается за счёт асинхронного обмена данными между браузером и сервером. AJAX используется для создания более интерактивных и динамичных веб-приложений. В частности с помощью аякса можно делать SPA - сингл пейдж аппликатион. То есть - одностраничные приложения. И потом партировать их, например, в мобильное приложение. Узнаете об этом подробнее позже.'),width=700),
+        ft.Container(ft.Text('Основные компоненты AJAX включают JavaScript, XML (или JSON), и объект XMLHttpRequest'),width=700),
+        ft.Container(ft.Text('Основные преимущества использования AJAX:'),width=700),
+        ft.Container(ft.Text(' - снижение трафика (из-за уменьшения объёма передаваемых данных между клиентом и сервером)'),width=700),
+        ft.Container(ft.Text(' - уменьшение нагрузки на сервер (не нужно генерировать всю страницу, а только ту часть, которую нужно обновить)'),width=700),
+        ft.Container(ft.Text(' - увеличение быстродействия и отзывчивости (нет необходимости в полной перезагрузки страницы, достаточно обновить содержимое только отдельных блоков)'),width=700),
+        ft.Container(ft.Text(' - повышение интерактивности (с помощью AJAX можно сразу отображать результаты и сделать ресурс более удобным для пользования)'),width=700),
+        ft.Container(ft.Text('Ниже пример Аякс запроса. '),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/4.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Выглядит страшно, но на самом деле все достаточно просто.'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/5.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Аякс и библиотека jQuery в свое время толкнули весь WEB вперед. Все сайты и сервисы писались исключительно на них. Было это лет 15 назад. Сейчас хорошие проекты на этих технологиях уже не пишутся, они утсарели. Их сменили фреймворки, типа React, Vue, Angular на фронтенде. Однако это не значит, что аякс и джейквери не встретить в интернете. Я вам больше скажу - большая часть интренета на них и работает. Давно сидели вконтакте? Он весь написан на php, аякс и джейквери. И до сих пор работает прекрасно.'),width=700),
+        ft.Container(ft.Text('Мы с вами так же изучим эти технологии. Потому что прежде чем научиться летать, нужно научиться ходить. Если вам сейчас предложить изучать реакт или ангуляр (современные технологии фронта на js), вы убежите и станите спорстменами или художниками. В программирование больше не вернетесь. На старте это действительно сложно. А вот после изучения технологий, на которых строились и  из которых вытекли современные фреймворки, станет на порядок легче.'),width=700),
+        ft.Container(ft.Text('Прочитал? На этом сейчас все. Можешь переходить к выпускному проекту по js.'),width=700),
     ])
 )
 # 5 урок js
 js_5 = ft.Container(
     ft.Column(controls=[
-        ft.Container(ft.Text('В РАЗРАБОТКЕ',text_align='center'),width=700,margin=ft.margin.only(top=300)),
-        ft.Container(ft.Text('У нас лапки, но мы работаем. Скоро здесь что-то появится.',text_align='center'),width=700),
+        ft.Container(ft.Text('Выпускной проект по JS',text_align='center'),width=700),
+        ft.Container(ft.Text('Ваш выпускной проект по js - это создание авторизации и рекгистрации, работающей на локалсторедже. Понятное делло, что в реальности мы будем использовать базу данных. Но сейчас мы сможем без проблем имитировать ее через локал сторедж.'),width=700),
+        ft.Container(ft.Text('Задача: Вам дается вот такая заготовка:'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/6.gif',width=700,height=300),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Вот код:'),width=700),
+        ft.Container(ft.Text('<div class="login">\n    <div class="form">\n      <h2>Welcome</h2>\n      <input type="text" placeholder="Username">\n      <input type="password" placeholder="Password">\n      <input type="submit" value="Sign In" class="submit">\n    </div>\n</div>',selectable=True),width=700),
+        ft.Container(ft.Text('* {\n    box-sizing: border-box;\n    font-family: sans-serif;\n  }\n  .login {\n    width: 320px;\n    height: 450px;\n    border: 1px solid #CCC;\n    background: url(https://media4.giphy.com/media/BHNfhgU63qrks/giphy.gif) center center no-repeat;\n    background-size: cover;\n    margin: 30px auto;\n    border-radius: 20px;\n  }\n  .login .form {\n    width: 100%;\n    height: 100%;\n    padding: 15px 25px;\n  }\n  .login .form h2 {\n    color: #FFF;\n    text-align: center;\n    font-weight: normal;\n    font-size: 18px;\n    margin-top: 60px;\n    margin-bottom: 80px;\n  }\n  .login .form input {\n    width: 100%;\n    height: 40px;\n    margin-top: 20px;\n    background: rgba(255,255,255,.5);\n    border: 1px solid rgba(255,255,255,.1);\n    padding: 0 15px;\n    color: #FFF;\n    border-radius: 5px;\n    font-size: 14px;\n  }\n  .login .form input:focus {\n    border: 1px solid rgba(255,255,255,.8);\n    outline: none;\n  }\n  ::-webkit-input-placeholder {\n      color: #DDD;\n  }\n  .login .form input.submit {\n    background: rgba(255,255,255,.9);\n    color: #444;\n    font-size: 15px;\n    margin-top: 40px;\n    font-weight: bold;\n  }',selectable=True),width=700),
+        ft.Container(ft.Text('Добавить в этой форме вкладку - регистрация. Сделать так, чтобы при регистрации, данные по юзеру падали в локалсторедж. При это пользователя перекидовало на вкладку входа и появлялась надпись - регистрация успешна. При вводе логина и пароля, вас перекидывает на страницу, где просто написано - ты вошел. Если логин или пароль неверен, должна появиться красная надпись - логин или пароль неверен.'),width=700),
+        ft.Container(ft.Text('На основе кода выше, сделай полноценную авторизацию и регистрацию. Задание непростое. Вот тебе схема того, что я хочу получить:'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/7.jpg',width=700,height=300),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Зарегистриуйся - ссылкой, чтобы было понятно, что на нее можно нажать. При нажатии на Зарегистрируйся, перекидывает на форму регистрации.'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/8.jpg',width=700,height=300),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Должна быть валидация, пароль минимум из 8 символов, включает в себя большую и маленькую букву, цифру. Если валидация не проходит, вылазит ошибка с надписиью.'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/9.jpg',width=700,height=300),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Когда нажимаешь на конопку зарегистрироваться, и все хорошо, перебрасывает обратно на страницу входа. При этом там сверху написано зеленым - регистрация успешна, войдите в аккаунт, чтобы продолжить.'),width=700),
+        ft.Container(ft.Text('Если вводишь неправильный логин или пароль, сверху так же, как в регистрации, появляется надпись - логин или пароль введены неверно. '),width=700),
+        ft.Container(ft.Text('Если вводишь верный логин и пароль, то тебя пропускает на стрницу, где написано - победа.'),width=700),
+        ft.Container(ft.Text('Здесь всего один новый элемент, которого ты не знаешь. Как сделать, чтобы после регистрации на странице входа была надпись - регистрация успешна. Естественно, тебе не нужно создавать несколько страниц входа - с надписью и без. Нужно каким то образом индицировать - страниц открыта впервые, либо после регистрации.'),width=700),
+        ft.Container(ft.Text('Тебе помогут параметры строки запроса. По умолчанию в браузере вот такая строка запроса у локального файла.'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/10.jpg',width=700,height=300),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('И мы в нее можем зашить данные (параметры) вот таким образом.'),width=700),
+        ft.Container(ft.Image(src='assets/src/pages/content/web_page/img/js/11.jpg',width=700,height=300),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Видишь на конце запроса ?lol=5'),width=700),
+        ft.Container(ft.Text('Так вот это и есть данные. Мы можем зашивать переменные в запрос. Это называется - параметры GET запроса. Мы их будем активно использовать в php. После знака вопроса идет обычная перменная.'),width=700),
+        ft.Container(ft.Text('При этом страница открывается обычным образом. Ей побарабану на параметры запроса. Так вот при успешной регистрации просто переходи на страницу входа с каким-нибудь гет параметром. Например, ?reg=1'),width=700),
+        ft.Container(ft.Text('И если на странице входа в строке запроса есть этот параметр, выводи надпись - регистрация успешна и все такое. А если параметра нет - не выволди надпись. Сам разберись, как парсить данные запроса. '),width=700),
+        ft.Container(ft.Text('Всё. Теперь ты сильный и всё знаешь. Работай. До php один шаг.'),width=700),
+        ft.Container(ft.Text(''),width=700),
+        ft.Container(ft.Text(''),width=700),
     ])
 )
 

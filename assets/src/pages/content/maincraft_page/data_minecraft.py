@@ -200,16 +200,48 @@ less_5 = ft.Container(
         ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_5/8.jpg',width=700),margin=ft.margin.only(left=0)),
         ft.Container(ft.Text('Получилось? Хорошо! Задание - сделай тай, чтобы если в чат написать "Алмаз", то перед тобой возникал блок аламазов. Сделай и покажи преподу.'),width=700),
         ft.Container(ft.Text(''),width=700),
-
-        
-        
         ])
 )
 # 6 урок
 less_6 = ft.Container(
     ft.Column(controls=[
         # ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/',width=700),margin=ft.margin.only(left=0)),
-        ft.Container(ft.Text('',text_align='center'),width=700),
+        ft.Container(ft.Text('Итоги 5 уроков. Что дальше?',text_align='center'),width=700),
+        ft.Container(ft.Text('Давай в этом уроке просто поговрим. Ты уже научился делать что-то в майнкрафте на питоне. И на самом деле мы изучили всю основу библиотеки mcpi. На ней еще можно сделать несколько прикольных проектов,  но нужна она только дл яознакомления. Все команды, что в ней доступны мы изучили. Она умеет получать координаты игрока, телепортировать его, создавать блоки, определять тип блока по координатам и писать в чат. На этом всё. Больше данная библиотека ничего делать не умеет. На ней не написать полноценных модов. Не собрать интересный сервер. А ведь нам так этого хочется, правда! Собрать крутой сервер с персональными модами, прописать собственные скрипты, запустить сервер для друзей и админить его. Вышкой будет подключение сайта и продажа привелегий. Так можно зарабатывать на своём сервере майнкрафт. Вот этого хочется. И мы это сделаем. mcpi - это ясельки, первый шаг. Теперь же давай научимся создавать свой сервер на любой версии майнкрафта, а не только на версиях 15 летней давности, подключать к ней моды и управлять через rcon на питоне.'),width=700),
+        ft.Container(ft.Text('Для работы мы использовали сервер в майнкрафте - spigot.'),width=700),
+        ft.Container(ft.Text('Если прочитать определение спигота, то нам напишут:'),width=700),
+        ft.Container(ft.Text('Spigot — глобальная серверная модификация, предоставляющая API для взаимодействия с игровым миром и созданная для упрощения создания плагинов к SMP-серверу. Spigot создан на основе ядра. CraftBukkit и призван заменить «старшего брата» стабильностью и производительностью. Кроме этого, почти все плагины, написанные для CraftBukkit, пойдут и на Spigot, но на Spigot написаны и собственные, недоступные CraftBukkit’у плагины.'),width=700),
+        ft.Container(ft.Text('Что-то здесь понятно, что-то нет. Понятно, что спигот основан на ядре CraftBukkit, на нем можно писать и запускать моды и так далее. Почему мы используем спигот? Потому что это просто. Нужно настроить сервер, на это нужно время, но потом он запускается и поддерживается буквально одной кнопкой. Это и правда удобно.'),width=700),
+        ft.Container(ft.Text('В первых 5 уроках вы использовали уже готовый сервер. Теперь же давайте научимся качать и настраивать его самостоятельно, чтобы вы могли повторить это и дома.'),width=700),
+        ft.Container(ft.Text('Переходим на сайт - https://serverjar.org/download/spigot и качаем нужную версию сервера',selectable=True),width=700),
+        ft.Container(ft.Text('В своей папке создаем папку - server. Закидываем в неё скаченный файл. Файл будем с расширением .jar - это расширение java. Скорее всего java у вас на кномпе будет установлена не той версии, либо вообще не установлена. '),width=700),
+        ft.Container(ft.Text('Например, для последнией (на данный моменти) версии майнкрафта - 1.21.4, нужна версия джавы - jdk 23. Java качается на оф сайте оракла. Заходим на сайт по ссылке:'),width=700),
+        ft.Container(ft.Text('https://www.oracle.com/java/technologies/javase/jdk23-archive-downloads.html',selectable=True),width=700),
+        ft.Container(ft.Text('И находим exe установщик для винды, качаем и устанвливаем'),width=700),
+        ft.Container(ft.Text('Однако вначале проверьте, может он уже установлен. Переходим на диск С, Program Filse, Java, там увидите установленные версии. Если нужная уже установлена, то качать не нужно. Если нет - качаем и устанавливаем'),width=700),
+        ft.Container(ft.Text('Смотрим, может установлена'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/4.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Качаем на сайте'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/3.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('После установки, нажимаем на скаченный файл server.jar в папке server в вашей папке.'),width=700),
+        ft.Container(ft.Text('Ждём несколько минут. Файлы сервера распакуются. Должно быть так:'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/5.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Просто ждите, пока все папки и файлы, как на картинке выше, не распакуются.'),width=700),
+        ft.Container(ft.Text('После этого нам нужно изменить несколько параметров. Первый - принять пользовательское соглашение. Для этого открываем файыл eula.txt и меняем eula=false на eula=true. Сохраняем и закрываем.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/6.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Снова нажимаем на server.jar и ждем. Через какое то время запустится серевер майнкрафта'),width=700),
+        ft.Container(ft.Text('В папке добавится еще много разных файлов, а так же запустится окно сервера с консолью и нагрузкой на систему.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/7.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Отлично! Чтобы подключиться к серверу не хватает всего одной вещи - перевести режим работы в оффлайн. Для этого остановите сервер (просто закройте окно с консолью сервера) и откройте файл server.txt Здесь хранятся все настройки сервера. У меня он открывается в vscod, так же он может открыться в блокноте, как и eula.txt. Найдите строку online-mode=true и замените на online-mode=false, сохраните и запустите сервер.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/9.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Поздравляю! Сервер запущен. Он пустой, базовый, но уже работает. Теперь нужно проверить, что все подключается как надо. Заходите в майнкрафт на той же версии, что и сервер. И подключаетесь к localhost, как и в первом уроке. '),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/8.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/10.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Так же в консоли сервера мы видим, что подключен игрок - min и заспавнен по таким то координатам.'),width=700),
+        ft.Container(ft.Image(src='src/pages/content/maincraft_page/img/les_6/11.jpg',width=700),margin=ft.margin.only(left=0)),
+        ft.Container(ft.Text('Готово! Вы создали сервер спигот нормальной, свежей версии и запустили его. Если у вас все получилось, можете переходить к следующему уроку. Преподу только не забудьте сказать, что я молодец и сделал урок. Чтобы он был в курсе, что ты молодец.'),width=700),
+        ft.Container(ft.Text(''),width=700),
+        ft.Container(ft.Text(''),width=700),
         ft.Container(ft.Text(''),width=700),
         
         
