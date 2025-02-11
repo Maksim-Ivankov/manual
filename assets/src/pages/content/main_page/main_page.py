@@ -5,9 +5,9 @@ from assets.imports import *
 
 
 class Main_page(ft.UserControl):
-    # def __init__(self,change_menu):
+    # def __init__(self):
     #     super().__init__()
-    #     self.change_menu = change_menu
+        
 
     def build(self):
         

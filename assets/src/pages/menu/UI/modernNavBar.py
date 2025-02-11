@@ -75,19 +75,19 @@ class ModernNavBar(ft.UserControl):
             'WEB',
         ]
         img_menu_white = {
-            'Главная': 'assets/src/img/icons/1_white.png',
-            'Скрейч': 'assets/src/img/icons/2_white.png',
-            'Роблокс': 'assets/src/img/icons/3_white.png',
-            'Майнкрафт': 'assets/src/img/icons/4_white.png',
-            'WEB': 'assets/src/img/icons/5_white.png',
+            'Главная': f'{path_img}\\1_white.png',
+            'Скрейч': f'{path_img}\\2_white.png',
+            'Роблокс': f'{path_img}\\3_white.png',
+            'Майнкрафт': f'{path_img}\\4_white.png',
+            'WEB': f'{path_img}\\5_white.png',
 
         }
         img_menu_yelow = {
-            'Главная': 'assets/src/img/icons/1_white.png',
-            'Скрейч': 'assets/src/img/icons/2_white.png',
-            'Роблокс': 'assets/src/img/icons/3_white.png',
-            'Майнкрафт': 'assets/src/img/icons/4_white.png',
-            'WEB': 'assets/src/img/icons/5_white.png',
+            'Главная': f'{path_img}\\1_white.png',
+            'Скрейч': f'{path_img}\\2_white.png',
+            'Роблокс': f'{path_img}\\3_white.png',
+            'Майнкрафт': f'{path_img}\\4_white.png',
+            'WEB': f'{path_img}\\5_white.png',
         }
         self.items = []
         for punkt in punkts_menu:
@@ -103,8 +103,8 @@ class ModernNavBar(ft.UserControl):
             alignment=ft.alignment.center,
             content=ft.Column(
                 controls=[
-                    ft.Container(ft.Image(src=f"assets/src/img/logo_2.png",width=140,height=28,),margin = ft.margin.only(bottom=10)),
-                    ft.Container(ft.Image(src=f"assets/src/img/icons/resize.png"),width=24,height=24,on_click=partial(self.func)),
+                    ft.Container(ft.Image(src=f"{path_img}\\logo_2.png",width=140,height=28,),margin = ft.margin.only(bottom=10)),
+                    ft.Container(ft.Image(src=f"{path_img}\\resize.png"),width=24,height=24,on_click=partial(self.func)),
                     ft.Column(self.items),
                     self.date_time()
                 ],

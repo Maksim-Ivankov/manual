@@ -1,8 +1,9 @@
 
 # from src.trade_window.trade_windows_pages.components.content.controllers.save_config import Save_config
 # import configparser
-
-# Работа с директорией
+import sys
+import os
+# Работа с директорией1
 APPNAME = "Учебник"
 # import sys
 # import os
@@ -48,6 +49,9 @@ width_window_platforma = 1186
 height_window_platforma = 760
 
 version_desctop = 'v1.25.11'
+
+appdata = os.path.join(os.environ['APPDATA'], 'Manual')
+path_img = appdata+'\\img'
 
 # key_bin = 'QIT80MTFskjHSr82dtsteA6bG01CUeODQCg65KoYaQ5LmPcSpYDzyv1Oa7fugW3m'
 # secret_bin = 'uMLo0WdaCv5FHBauV8QI4LZoDgmmVFf5Jd8TboKYRxHnHx6pmNrhg5bmdBgO54xI'

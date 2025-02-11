@@ -24,7 +24,7 @@ class Menu(ft.UserControl):
         def AnimateSidebar(e):
             self.time_event_click = time.time()
             if self.controls[0].width !=62:
-                self.controls[0].content.controls[0].content.controls[0].content.src = 'assets/src/img/logo_2_min.png'
+                self.controls[0].content.controls[0].content.controls[0].content.src = f'{path_img}\\logo_2_min.png'
                 self.controls[0].content.controls[0].content.controls[0].update()
                 for items in self.controls[0].content.controls[0].content.controls[2].controls:
                     if isinstance(items,ft.Container):
@@ -41,7 +41,7 @@ class Menu(ft.UserControl):
                 self.controls[0].width = 200
                 self.controls[0].update()
                 self.controls[0].content.controls[0].content.controls[3].content.controls[0].content.controls[0].controls[1].opacity = 1
-                self.controls[0].content.controls[0].content.controls[0].content.src = 'assets/src/img/logo_2.png'
+                self.controls[0].content.controls[0].content.controls[0].content.src = f'{path_img}\\logo_2.png'
                 self.controls[0].content.controls[0].content.controls[0].update()
                 for items in self.controls[0].content.controls[0].content.controls[2].controls:
                     if isinstance(items,ft.Container):
