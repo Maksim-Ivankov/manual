@@ -14,7 +14,7 @@ class Platforma(ft.UserControl):
     def __init__(self,page):
         super().__init__()
         self.page = page
-        self.page_one = 'Главная'
+        self.page_one = 'Роблокс'
         # self.page_one = 'Главная'
 
     # запуск в потоке пересчета времени

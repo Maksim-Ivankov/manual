@@ -35,6 +35,11 @@ class Roblox_page(ft.UserControl):
             'Урок 13': Print_lesson(page),
             'Урок 14': Print_lesson(page),
             'Урок 15': Print_lesson(page),
+            'Урок 16': Print_lesson(page),
+            'Урок 17': Print_lesson(page),
+            'Урок 18': Print_lesson(page),
+            'Урок 19': Print_lesson(page),
+            'Урок 20': Print_lesson(page),
         }
   
         if page == 'Оглавление': title_print = 'Учебник Роблокс'
@@ -61,6 +66,7 @@ class Roblox_page(ft.UserControl):
                             pages_list[page]
                         ],scroll=ft.ScrollMode.ALWAYS),
                         expand=2,
+                        padding=ft.padding.only(bottom=30)
                     )
                 ]
             ),expand=2

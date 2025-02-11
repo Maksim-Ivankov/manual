@@ -39,9 +39,35 @@ class Oglav(ft.UserControl):
                                             ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 14. Контер страйк',size=12,text_align='center',height=50),width=224,data='Урок 14',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
                                             ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 15. Инвентарь',size=12,text_align='center',height=50),width=224,data='Урок 15',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
                                         ]),
-                              
-                        
-                                        
+                                    ]),
+                                    width=800,
+                                    # height=80,
+                                    margin=ft.margin.only(left=90),
+                                ),
+                                ft.Container(ft.Text('Роблокс, уровень 2. Для самых крутых и дерзких',size=12,color=c_white,text_align='center'),margin=ft.margin.only(left=300)),
+                                ft.Container(#11
+                                    ft.Row(controls=[
+                                        ft.Column(controls=[
+                                            ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 16. Начнём учиться',size=12,text_align='center',height=50),width=224,data='Урок 16',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                            ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 17. Статистика игроков',size=12,text_align='center',height=50),width=224,data='Урок 17',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                            ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 18. Создание магазина',size=12,text_align='center',height=50),width=224,data='Урок 18',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                            ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 19. Полоса препятствий',size=12,text_align='center',height=50),width=224,data='Урок 19',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                            ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 20. Потеем над графой',size=12,text_align='center',height=50),width=224,data='Урок 20',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        ]),
+                                        # ft.Column(controls=[
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 6. Эффекты для блоков',size=12,text_align='center',height=50),width=224,data='Урок 6',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 7. Делаем меню',size=12,text_align='center',height=50),width=224,data='Урок 7',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 8. Телепорт',size=12,text_align='center',height=50),width=224,data='Урок 8',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 9. Килл блок',size=12,text_align='center',height=50),width=224,data='Урок 9',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 10. Смена дня и ночи',size=12,text_align='center',height=50),width=224,data='Урок 10',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        # ]),
+                                        # ft.Column(controls=[
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 11. Шахматы',size=12,text_align='center',height=50),width=224,data='Урок 11',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 12. Сбор яблок',size=12,text_align='center',height=50),width=224,data='Урок 12',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 13. Паркур',size=12,text_align='center',height=50),width=224,data='Урок 13',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 14. Контер страйк',size=12,text_align='center',height=50),width=224,data='Урок 14',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        #     ft.Container(ft.ElevatedButton(content = ft.Text('\nУрок 15. Инвентарь',size=12,text_align='center',height=50),width=224,data='Урок 15',on_click=self.change_page,bgcolor=c_yelow,color=c_blue,style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=0))),alignment=ft.alignment.center,margin=2),
+                                        # ]),
                                     ]),
                                     width=800,
                                     # height=80,
